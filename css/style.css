@@ -276,3 +276,15 @@
   color: #fafafa;
 }
 
+/* Página de Saldo */
+.getBalance {
+  padding: 20px 10px;
+}
+
+.addCard input {
+  margin-top: 20px;
+}
+
+.addedBips {
+  width: 100%;
+}
