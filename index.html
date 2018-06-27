@@ -12,7 +12,7 @@
   <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Work+Sans" rel="stylesheet">
   <!-- Íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Mis estilos -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,7 +28,7 @@
         <form class="form-signin">
           <input id="userMail" type="text" class="form-control" placeholder="Correo electrónico" required="" onchange="isValidEmail()">
           <input id="pass" type="password" class="form-control" placeholder="Contraseña" required="" onchange="isValidPass()">
-          <button id="loginBtn" class="btn btn-lg btn-primary btn-block" type="submit">
+          <button id="loginBtn" class="btn btn-lg btn-primary btn-block" type="button">
             INICIAR SESIÓN
           </button>
         </form>
@@ -38,53 +38,7 @@
         </p>
       </section>
     </div>
-    <div id="wrapper" class="mainPage d-none">
-      <nav id="navbar">
-        <aside id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-            <li>
-              <a href="#">Ver Saldo</a>
-            </li>
-            <li>
-              <a href="#">Calcular tarifa</a>
-            </li>
-            <li>
-              <a href="#">Perfil</a>
-            </li>
-            <li>
-              <a href="#">Preguntas frecuentes</a>
-            </li>
-            <li>
-              <a href="#">Home</a>
-            </li>
-          </ul>
-        </aside>
-      </nav>
-      <header class="top row">
-        <h2>TRANS-LAB</h2>
-        <a href="#menu-toggle" id="menu-toggle" class="justify-content-end">
-          <div class="animated-icon1">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </header>
-      <section class="menu">
-        <div class="options row">
-          <a href="#">VER SALDO</a>
-        </div>
-        <div class="options row">
-          <a href="#">CALCULAR TARIFA</a>
-        </div>
-        <div class="options row">
-          <a href="#">PERFIL</a>
-        </div>
-        <div class="options row">
-          <a href="#">PREGUNTAS FRECUENTES</a>
-        </div>
-      </section>
-    </div>
+
   </div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>

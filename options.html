@@ -12,7 +12,8 @@
   <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Work+Sans" rel="stylesheet">
   <!-- Íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <!-- Mis estilos -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,26 +25,31 @@
         <aside id="sidebar-wrapper">
           <ul class="sidebar-nav">
             <li>
+              <i class="fas fa-dollar-sign"></i>
               <a href="#">Ver Saldo</a>
             </li>
             <li>
+              <i class="fas fa-calculator"></i>
               <a href="#">Calcular tarifa</a>
             </li>
             <li>
-              <a href="#">Perfil</a>
+              <i class="fas fa-user-circle"></i>
+              <a href="profile.html">Perfil</a>
             </li>
             <li>
+              <i class="far fa-question-circle"></i>
               <a href="#">Preguntas frecuentes</a>
             </li>
             <li>
-              <a href="#">Home</a>
+              <i class="fas fa-arrow-circle-left"></i>
+              <a href="options.html">Home</a>
             </li>
           </ul>
         </aside>
       </nav>
       <header class="top row">
-        <h2>TRANS-LAB</h2>
-        <a href="#menu-toggle" id="menu-toggle" class="justify-content-end">
+        <h4 class="col-10">TRANS-LAB</h4>
+        <a href="#menu-toggle" id="menu-toggle" class="col-2">
           <div class="animated-icon1">
             <span></span>
             <span></span>
@@ -59,7 +65,7 @@
           <a href="#">CALCULAR TARIFA</a>
         </div>
         <div class="options row">
-          <a href="#">PERFIL</a>
+          <a href="profile.html">PERFIL</a>
         </div>
         <div class="options row">
           <a href="#">PREGUNTAS FRECUENTES</a>
@@ -74,6 +80,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/toggle.js"></script>
 </body>
 
 </html>

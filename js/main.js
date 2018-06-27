@@ -6,7 +6,7 @@ loginBtn.addEventListener('click', () => {
   let mail = document.getElementById('userMail').value;
   let password = document.getElementById('pass').value;
   if(isValidEmail(mail) === true && isValidPass(password) === true && password.length <= 8) {
-    window.location.href = '../main.html';
+    document.location.href = 'options.html';
   } else {
     alert('Ingrese datos válidos')
   }
@@ -19,7 +19,6 @@ const isValidEmail = (mail) => {
 const isValidPass = (password) => {
   return /^([0-9])*$/.test(password);
 }
-
 
 /*
 
@@ -48,3 +47,4 @@ const getBip = () => {
 }
 
 */
+

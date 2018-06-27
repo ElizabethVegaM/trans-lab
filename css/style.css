@@ -83,6 +83,7 @@
 }
 .menu {
   padding: 100px 0;
+  text-align: center;
 }
 
 .options {
@@ -92,38 +93,38 @@
   font-size: 20px;
 }
 
-.option a {
+.options a {
   color: #fafafa;
 }
 
 /* Navbar */
-#navbar h2 {
+#navbar h4 {
   text-align: center;
+  font-size: 12px;
 }
 
 /* Estilos de botón que despliega menú*/
 #menu-toggle {
-  padding-top: 10px;
-  padding-left: 80px;
+  padding-top: 6px;
 }
 
 .animated-icon1 {
   width: 30px;
-  height: 20px;
+  height: 16px;
   position: relative;
-  margin: 0px;
+  margin-top: 3px;
   cursor: pointer;
 }
 
 .animated-icon1 span {
   display: block;
   position: absolute;
-  height: 2px;
-  width: 100%;
+  height: 1px;
+  width: 80%;
   border-radius: 9px;
   opacity: 1;
   left: 0;
-  background: #2b2b2b;
+  background: #fafafa;
   box-shadow: 5px 5px 10px -6px rgba(0,0,0,0.5);
 }
 
@@ -132,11 +133,11 @@
 }
 
 .animated-icon1 span:nth-child(2) {
-  top: 10px;
+  top: 8px;
 }
 
 .animated-icon1 span:nth-child(3) {
-  top: 20px;
+  top: 16px;
 }
 
 /* Menú lateral */
@@ -176,18 +177,26 @@
   width: 250px;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
   list-style: none;
 }
 
 .sidebar-nav li {
+  padding-bottom: 8px;
   text-indent: 20px;
   line-height: 40px;
+}
+
+.sidebar-nav i {
+  color: #f6a800;
+  display: inline;
 }
 
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
   color: #999999;
+  display: inline;
 }
 
 .sidebar-nav li a:hover {
