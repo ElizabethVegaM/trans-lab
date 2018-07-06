@@ -12,13 +12,15 @@
   <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Work+Sans" rel="stylesheet">
   <!-- Íconos -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <!-- Mis estilos -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container-fluid">
+    <!-- Login -->
     <div id="login" class="loginPage">
       <section class="welcome">
         <img id="logo" src="docs/imagen.png" alt="logo">
@@ -39,6 +41,94 @@
       </section>
     </div>
 
+    <!-- Menú lateral -->
+    <div id="mainPage" class="page">
+      <div id="wrapper">
+        <nav id="navbar">
+          <aside id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li>
+                <i class="fas fa-dollar-sign"></i>
+                <a href="#" onclick="goBalancePage()">Ver Saldo</a>
+              </li>
+              <li>
+                <i class="fas fa-calculator"></i>
+                <a href="#">Calcular tarifa</a>
+              </li>
+              <li>
+                <i class="fas fa-user-circle"></i>
+                <a href="#" onclick="goProfilePage()">Perfil</a>
+              </li>
+              <li>
+                <i class="far fa-question-circle"></i>
+                <a href="#">Preguntas frecuentes</a>
+              </li>
+              <li>
+                <i class="fas fa-arrow-circle-left"></i>
+                <a href="#">Home</a>
+              </li>
+            </ul>
+          </aside>
+        </nav>
+
+        <!-- Header -->
+        <header class="top row">
+          <div class="col-10">
+            <h4>TRANS-LAB</h4>
+          </div>
+          <a href="#menu-toggle" id="menu-toggle" class="col-2">
+            <div class="animated-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </header>
+
+        <!-- Menu principal -->
+        <section id="menu">
+          <button class="options" type="button" onclick="goBalancePage()">VER SALDO</button>
+          <button class="options" type="button">CALCULAR TARIFA</button>
+          <button class="options" type="button" onclick="goProfilePage()">PERFIL</button>
+          <button class="options" type="button">PREGUNTAS FRECUENTES</button>
+        </section>
+
+        <!-- Ver Saldo -->
+        <section id="getBalance" class="page">
+          <div class="addCard">
+            <input id="bipNumber" type="text" class="form-control" placeholder="Número de la tarjeta">
+          </div>
+          <div class="options row">
+            <select name="registeredBips" id="addedBips">Seleccionar tarjeta...</select>
+          </div>
+          <button id="getBalanceBtn" type="button">VER SALDO</button>
+          <div class="bipBalance">
+          </div>
+        </section>
+
+        <!-- Perfil -->
+        <section id="profile" class="page">
+          <div class="user">
+            <div id="round">
+              <img src="docs/facebook-blank-face-blank-300x225-300x225-1.jpeg" alt="">
+            </div>
+          </div>
+          <div class="bip">
+            <div class="mail">
+              <p id="userMail">User Mail</p>
+            </div>
+            <div class="addBip">
+              <input id="bipNumber" type="number" class="form-control" placeholder="Número de la tarjeta">
+              <button id="addBtn" type="button">AGREGAR TARJETA</button>
+            </div>
+            <div class="addedBips">
+              <div id="bips">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>

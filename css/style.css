@@ -7,10 +7,14 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.loginPage {
+  margin: 0 20px;
+  padding: 0;
+}
+
 .welcome {
-  height: 100%;
   text-align: center;
-  padding: 80px 10px;
+  padding: 70px 10px;
 }
 
 #logo {
@@ -64,7 +68,16 @@
   padding-top: 10px;
 }
 
+.noneLogin {
+  display: none;
+}
+
+.page {
+  display: none;
+}
+
 /* Página principal */
+
 #wrapper {
   background-color: #dddee0;
   height: 100vh;
@@ -81,29 +94,35 @@
   color: #fafafa;
   margin: 0;
 }
-.menu {
-  padding: 100px 0;
+
+header h4 {
+  padding-top: 2px;
+  text-align: center;
+}
+
+#menu {
+  padding: 60px 0;
   text-align: center;
 }
 
 .options {
   background-color: #f6a800;
+  width: 90%;
   margin: 20px 10px;
   padding: 10px 20px;
   font-size: 20px;
-}
-
-.options a {
   color: #fafafa;
 }
 
 /* Navbar */
+
 #navbar h4 {
   text-align: center;
   font-size: 12px;
 }
 
 /* Estilos de botón que despliega menú*/
+
 #menu-toggle {
   padding-top: 6px;
 }
@@ -125,7 +144,7 @@
   opacity: 1;
   left: 0;
   background: #fafafa;
-  box-shadow: 5px 5px 10px -6px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.5);
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -141,6 +160,7 @@
 }
 
 /* Menú lateral */
+
 #sidebar-wrapper {
   z-index: 1000;
   position: absolute;
@@ -205,7 +225,8 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
   text-decoration: none;
 }
 
@@ -225,6 +246,7 @@
 }
 
 /* Perfil */
+
 .user {
   padding: 30px 10px;
   background-color: #f6a800;
@@ -277,7 +299,8 @@
 }
 
 /* Página de Saldo */
-.getBalance {
+
+#getBalance {
   padding: 20px 10px;
 }
 
@@ -287,4 +310,53 @@
 
 .addedBips {
   width: 100%;
+}
+
+@media (min-width: 500px) {
+  .loginPage {
+    margin: 0 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .loginPage {
+    margin: 0 200px;
+  }
+  #menu {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 950px) {
+  #sidebar-wrapper {
+    height: 100vh;
+    min-width: 250px;
+    max-width: 250px;
+    background: #fafafa;
+    transition: all 0.5s;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: visible;
+    position: sticky;
+    float: left;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  header {
+    float: right;
+    width: 100%;
+    text-align: initial;
+    padding: 10px 0;
+  }
+  #menu, #getBalance, #profile {
+    margin-left: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loginPage {
+    margin: 0 500px;
+  }
 }
