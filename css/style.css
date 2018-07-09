@@ -173,7 +173,7 @@ header h4 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; 
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -250,14 +250,14 @@ header h4 {
 .user {
   padding: 30px 10px;
   background-color: #f6a800;
+  text-align: center;
 }
 
 #round {
   margin: 0 auto;
   height: 150px;
   width: 150px;
-  border-radius: 750px;
-  background-color: #ced4da;
+  border-radius: 50%;
 }
 
 #round img {
@@ -275,6 +275,7 @@ header h4 {
 .mail {
   margin-top: 20px;
   background-color: #fafafa;
+  color: #3e3f41;
 }
 
 .addBip {

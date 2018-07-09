@@ -4,14 +4,16 @@
   const profilePage = document.getElementById('profile');
   const balancePage = document.getElementById('getBalance');
   const menuPage = document.getElementById('menu');
+  const userMail = document.getElementById('mailUser');
 
   // Login 
   loginBtn.addEventListener('click', () => {
     let mail = document.getElementById('userMail').value;
     let password = document.getElementById('pass').value;
-    if (isValidEmail(mail) === true && isValidPass(password) === true && password.length <= 8) {
+    if (isValidEmail(mail) === true && isValidPass(password) === true && password.length <= 8 && password.length > 1) {
       mainPage.classList.remove('page');
       loginPage.classList.add('noneLogin');
+      userMail.innerHTML = mail;
     } else {
       alert('Ingrese datos válidos')
     }
@@ -24,8 +26,6 @@
   const isValidPass = (password) => {
     return /^([0-9])*$/.test(password);
   }
-
-
 
   const goBalancePage = () => {
     if (balancePage.className === 'page') {
@@ -49,17 +49,13 @@
     }
   }
 
-
-
-  /*
-
   // Guardar tarjetas Bip
   const addBtn = document.getElementById('addBtn');
   const bipDiv = document.getElementById('bips');
   const selectBip = document.getElementById('addedBips');
-  let bipNumber = document.getElementById('bipNumber').value;
 
   addBtn.addEventListener('click', () => {
+    let bipNumber = document.getElementById('bipNumber').value;
     console.log(bipNumber);
     bipDiv.innerHTML += bipBumber;
     let addBip = selectBip.createElement('option');
@@ -68,8 +64,6 @@
   })
 
   // Consultar Saldo Bip
-
-
   const getBip = (bipNumber) => {
     fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${bipNumber}`)
       .then((response) => {
@@ -82,4 +76,3 @@
         console.log('Tuvimos un error procesando tu información')
       })
   }
-  */
